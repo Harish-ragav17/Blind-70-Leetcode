@@ -1,4 +1,5 @@
 class Solution {
+    Map<String, Boolean> map = new HashMap<>();
     public boolean wordBreak(String s, List<String> wordDict) {
         return breakW(s, new HashSet<>(wordDict));
     }
@@ -23,7 +24,7 @@ class Solution {
             }
         }
         
-        map.put(s, false);
-        return false; 
+        map.put(s, false); 
+        return false;
     }
 }
